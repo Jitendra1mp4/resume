@@ -18,10 +18,15 @@ body {
 }
 #root {
   margin: 3rem auto;
-  width: 80%;
+  width: 95%;
   max-width: 800px;
-  padding: 5rem 10rem;
   background-color: whitesmoke;
+  overflow: hidden;
+}
+.canvas {
+  margin: 5rem auto;
+  width: 80%;
+  /* background-color: red; */
 }
 header {
   display: flex;
@@ -33,13 +38,13 @@ header .heading-container hr {
   margin-top: 0.5em;
   border: 0.2rem solid var(--color-secondary);
 }
-header .contact li a{
-  color : var(--color-secondary)
+header .contact li a {
+  color: var(--color-secondary);
 }
 
-a{
+a {
   text-decoration: none;
-  color :rgb(0, 55, 36);
+  color: rgb(0, 55, 36);
 }
 hr {
   border: 1px solid var(--color-secondary);
@@ -63,7 +68,7 @@ section {
 section h2 {
   min-width: 35%;
   color: var(--color-secondary);
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 header ul {
   text-align: right;
@@ -93,33 +98,48 @@ article.languages {
   display: flex;
   justify-content: space-between;
 }
-article.skills{
-    display: flex;
-    justify-content: space-between;
-    justify-content: flex-start;
+article.skills {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
 }
-.ul-skill > li{
-    display: flex;
-    flex-direction: column;
+.ul-skill > li {
+  display: flex;
+  flex-direction: column;
 }
-.ul-skill:first-of-type{
-  width:50%;
+.ul-skill:first-of-type {
+  width: 50%;
   max-width: 20rem;
 }
-.skill-name{
-    color :var(--color-primary);
-    font-weight: bold;
+.skill-name {
+  color: var(--color-primary);
+  font-weight: bold;
 }
 
-.skill-level{
-    color :var(--color-secondary)
+.skill-level {
+  color: var(--color-secondary);
 }
 
-article.achievement p{
-margin-bottom: .7rem;
+article.achievement p {
+  margin-bottom: 0.7rem;
 }
-
 
 ul {
   list-style: none;
+}
+
+@media screen and (max-width: 700px) {
+header{
+  flex-direction: column;
+}
+  section {
+    flex-direction: column;
+  }
+  section h2 {
+    margin-bottom: 0.5em;
+  }
+
+  article {
+    width: fit-content;
+  }
 }
