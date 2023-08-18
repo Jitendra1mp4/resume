@@ -79,15 +79,11 @@ header ul {
   display: flex;
   flex-direction: column;
 }
-main > section:nth-child(2) > div > article:nth-child(1) {
+article {
   margin-bottom: 2rem;
 }
 .training article {
   margin-bottom: 0.5em;
-}
-article,
-.training {
-  width: 70%;
 }
 
 article ul li {
@@ -110,8 +106,9 @@ article.skills {
   flex-direction: column;
 }
 .ul-skill:first-of-type {
-  width: 50%;
-  max-width: 20rem;
+  width:28vw;
+  min-width: 10em;
+  max-width: 15em;
 }
 .skill-name {
   color: var(--color-primary);
