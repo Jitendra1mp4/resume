@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --color-primary: rgb(50, 50, 50);
+  --color-secondary: rgb(90, 90, 90);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: rgb(227, 227, 227);
+}
+#root {
+  margin: 3rem auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 5rem 10rem;
+  background-color: whitesmoke;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+header .heading-container hr {
+  margin-top: 0.5em;
+  border: 0.2rem solid var(--color-secondary);
+}
+header .contact li a{
+  color : var(--color-secondary)
+}
+
+a{
+  text-decoration: none;
+  color :rgb(0, 55, 36);
+}
+hr {
+  border: 1px solid var(--color-secondary);
+  margin: 2rem auto;
+}
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+}
+main {
+  font-size: 1.4rem;
+}
+section {
+  display: flex;
+  width: 100%;
+  margin: 3rem auto;
+  justify-content: flex-start;
+}
+
+section h2 {
+  min-width: 35%;
+  color: var(--color-secondary);
+  padding-top: .5rem;
+}
+header ul {
+  text-align: right;
+}
+.training {
+  display: flex;
+  flex-direction: column;
+}
+#root > main > section:nth-child(2) > div > article:nth-child(1) {
+  margin-bottom: 2rem;
+}
+.training article {
+  margin-bottom: 0.5em;
+}
+article,
+.training {
+  width: 70%;
+}
+
+article ul li {
+  padding: 0.3rem;
+}
+article ul h3 {
+}
+
+article.languages {
+  display: flex;
+  justify-content: space-between;
+}
+article.skills{
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+}
+.ul-skill > li{
+    display: flex;
+    flex-direction: column;
+}
+.ul-skill:first-of-type{
+  width:50%;
+  max-width: 20rem;
+}
+.skill-name{
+    color :var(--color-primary);
+    font-weight: bold;
+}
+
+.skill-level{
+    color :var(--color-secondary)
+}
+
+article.achievement p{
+margin-bottom: .7rem;
+}
+
+
+ul {
+  list-style: none;
+}
